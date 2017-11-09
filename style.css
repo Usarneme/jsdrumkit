@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  background: url(http://maxpixel.freegreatpicture.com/static/photo/1x/Concert-Band-Celebration-Audience-Crowd-Festival-1867754.jpg) bottom center;
+  background: url(concert.jpg) bottom center;
   background-size: cover;
 }
 body,html {
@@ -11,24 +11,35 @@ body,html {
 
 .keys {
   display: flex;
+  flex-direction: column;
   flex: 1;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
 }
 
+.row {
+  display: flex;
+}
+
 .key {
   border: .4rem solid black;
-  border-radius: .5rem;
+  border-radius: 100%;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
   transition: all .07s ease;
   width: 10rem;
+  height: 10rem;
   text-align: center;
   color: white;
   background: rgba(0,0,0,0.4);
   text-shadow: 0 0 .5rem black;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .playing {
